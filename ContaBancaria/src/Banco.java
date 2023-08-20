@@ -4,10 +4,19 @@ public class Banco {
 
     public static void main(String[] args) {
 
+        //nome:
 
-        double saldo = 2500;
+        System.out.println("digite seu nome: ");
+        Scanner nomeClienteLeitura = new Scanner(System.in);
+        String nomeCliente = nomeClienteLeitura.nextLine();
+
+        //saldo:
+        System.out.println("Digite seu saldo: ");
+        Scanner leituraSaldo = new Scanner(System.in);
+        double saldo = leituraSaldo.nextDouble();
+
+        //atribuições do banco:
         String tipoConta = "corrente";
-        String nomeCliente = "Emanuel";
         String menu = String.format("***********************\n" +
                 "Dados iniciais do cliente:\n" +
                 "\n" +
